@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "b40e0df4-4641-4fa4-83f7-e6956972fb30",
+		"name": "todo-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create a task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.staging.avadigital.com.br"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTUxNzEyMzYsImlzcyI6Im1pY3JvYXBwLWxvZ2luIiwiZGF0YSI6IjEvY1ZhYmdsVm9abVRHSzhKUVE5VlNzWDdUVGJsMFhBcTRTYzMxaC9Hd3lzMTRrVmlNa3BqQWMxSnFMQUdTQ0FNNmZGbjdFWHdab3Y4QnlDNWRvNEw2cWVFeXZTdktlR0ZQU3laUmxwQ29JbDlnZzlwdDN1ajRhc3JlUWRRRXhSVW9SR3V3eTN5L0dNTkY1TGtySm8vam9sVzhPanZzU0ZYYjRoREN6ZXJuVUx0YkwrSmNEYThuKzFlYUswTmxuQXJ1NEM0bDQ2Y0hJWXE5WTU1QUx2bGlqNmtPWHdGRkx5eHB1TjgyWGxtZnh5UmY2b2NvMHZ3akEwVGZybWhIbGEwSnZWZ3NkU2hoUGRTZUpMRzFPaFhhdXVDWW1WcWVoNnVvNnViUUNoQjErK0hPM1lTWnJLd2ZUWFpCK3ZSelE3d2FPM3ZrZlJoRnVlU0hndWxmRVZrUmFuV2FSZEhBVjVTNzB2TUZRYkJrcEdZNGxEQkgranFSd1hUMExldzZHOEs4eHFpeERlRU85Tm4vZDBzNGpGTDEzTk5SRE9JSm5jaWkwaWtZRUp1TW8xU3k1RkZBbUp6dlBldWVGRkJpSUo5U2VacmlOZHZGRmJub0gvNThuUVcrbWV2OGlQRXpuUmg3Wk8vRjRJY1NwTlFNeHZZU0I2d0loRkhMNVlyMG9naWhlS01aMnVaakhjbHpPNkhWZUd5SW9kakRzSVRvWTZoOW9HcG5DMUxlSzcvODNSUjE0ekhEYnpFZXdCaXF2cEJ4VFRTVDBxeUFZdDUxWXlQa2U4UGJ3RXp5dzFaYUNveU1YVW9UVUc5RFMzeE5oQnpyck4xTUdHNGJwQ3BZQ0QvTTRDNjE1ZG5peVRhd09uUW9rZWR2MVlLSFIrTGtyZmVQMW0zV3l3OFd4cHBGUHN3SGxTeWNVcmtnMEE5M1Fjd3I1akpHVGlHNmFWUlNuQjUyNFJqQnozdVc2U1UzZ2FsdW9tZElhamVUVnI2TDJtVTd0WG9yb296TFZjdWpUMlNSYmt2dkVROVd5YXVlMzZ4MFZKc2RzQWVScUpYTDRkT2lWbmsvRHhFVkU9IiwiaWF0IjoxNjA3OTQ3MjM2fQ.Qr_hapgrpC1YlILB6NepiLZCt-LphtN6H-gktBxddyCK0Vfppq5-SlhW3HQJjE6iC_QgiJN4UZqM5v3yp5Ej7S-z0iccF9LcmAetGItSKWMzfebX7_whoL7CV-ZlLUFS6PKKPSxsK26EIkTg7XI6gLEZiNwco_f9ojFibC-VVvm1TA36Y9Zw-8rwW67sR28e7WfLuNFHDvNSuAWXYEV8tqHnbC6SZL-jqkfNMMTUaf799b-zLJmbXJft9GuI6dCgR0-m6Kml38JcICHW-bIAfCPRYhcvo2fOKrZKvzwcnhf1trdQKNjn9UFxVCbgmv1RWGDIBS8nsBafioEJMzX5_Q"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.microfront.development.avadigital.com.br"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.microfront.development.avadigital.com.br/"
+					},
+					{
+						"key": "accept-language",
+						"value": "pt-BR,pt;q=0.9"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"4-X/5TO4MPCKAyY0ipFgr6/IraRNs\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"descrição alterada\",\n    \"email\":\"eu@me.com\",\n    \"name\":\"Nome do responsável\",\n    \"password\":\"TrabalheNaSaipos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/createtask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"createtask"
+					]
+				},
+				"description": "body example:{\n    \"description\":\"descrição\",\n    \"email\":\"email@email\",\n    \"name\":\"nome\"\n}\nsend id in req.params"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"Descrição alterada\",\n    \"email\":\"eu@me.com\",\n    \"name\":\"Novo nome\",\n    \"isConcluded\": false,\n    \"password\":\"TrabalheNaSaipos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/task/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar todas as tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Rando cat facts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/randomTasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"randomTasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
