@@ -1,4 +1,4 @@
-# Todo-LIst
+# Todo-List
 Uma API muito basica.
 *Cria uma tarefa com nome, descrição e email válido.
 *Altera o status de concluido para pendente por até duas vezes
