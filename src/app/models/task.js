@@ -60,7 +60,8 @@ class Task extends Model {
     this.validateRequired(task);
     const taskFound = await Task.findOne({ where: { id: task.id } });
     await taskFound.setTask(task);
-    return taskFound.save();
+    taskFound.save();
+    return taskFound.dataValues;
   }
 
   async setTask(task) {

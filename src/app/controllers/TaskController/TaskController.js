@@ -25,8 +25,8 @@ class TaskController {
       password,
     };
     try {
-      await Task.updateTask(task);
-      return res.status(200).send();
+      const data = await Task.updateTask(task);
+      return res.status(200).send(data);
     } catch (err) {
       console.error(err);
       //Usando 500 para generalizar, o correto seria identificar cada statuscode HTTP.
